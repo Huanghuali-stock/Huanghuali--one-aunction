@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huanghuali Auction</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Huanghuali Auction Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#price-history">Price History</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Explore the Timeless Value of Huanghuali</h2>
+    <p>Discover Huanghuali wood's rise in value from the Ming and Qing dynasties to today.</p>
+    <button onclick="scrollToProducts()">Browse Products</button>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Available Huanghuali Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <h3>Ming Dynasty Huanghuali Table</h3>
+        <p>Starting Bid: $500,000</p>
+        <p>Current Bid: $1,200,000</p>
+        <button onclick="viewProductDetails('Ming Table')">View Details</button>
+      </div>
+      <div class="product">
+        <h3>Qing Dynasty Huanghuali Chair</h3>
+        <p>Starting Bid: $300,000</p>
+        <p>Current Bid: $900,000</p>
+        <button onclick="viewProductDetails('Qing Chair')">View Details</button>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </section>
+
+  <!-- Price History Section -->
+  <section id="price-history">
+    <h2>Huanghuali Price History</h2>
+    <canvas id="priceChart"></canvas>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For more information on auctions, reach out to us at info@huanghualiauctions.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
